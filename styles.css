@@ -38,11 +38,11 @@ nav {
 }
 /*links hover*/
 a:hover {
-  color: #2fb2a0;
+  color: var(--cef-teal);
 }
 /*landing page section*/
 #LandingPage {
-  color: white;
+  color: var(--white);
   margin: 7.5rem;
   margin-top: 10rem;
 }
@@ -55,4 +55,11 @@ a:hover {
 #LandingPage p {
   font-size: 20px;
   padding: 5px;
+}
+:root {
+  --black: #000000;
+  --grey: #1e1e1e;
+  --red: #e9081e;
+  --white: #ffffff;
+  --cef-teal: #2fb2a0;
 }
