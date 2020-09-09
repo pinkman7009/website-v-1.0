@@ -56,6 +56,14 @@ a:hover {
   font-size: 20px;
   padding: 5px;
 }
+.row {
+  margin: 8rem 0;
+}
+.row img {
+  height: 32vh;
+  width: 50%;
+  margin: 0 4rem;
+}
 :root {
   --black: #000000;
   --grey: #1e1e1e;
