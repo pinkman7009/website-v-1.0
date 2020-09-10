@@ -4,6 +4,11 @@ body {
   box-sizing: border-box;
   background-color: rgb(36, 35, 35);
   font-family: "Lato", sans-serif;
+  background-image: url(../website-v-1.0/public/assets/images/logo_Recovered2.png);
+ 
+  background-attachment: fixed;
+ 
+  background-size: cover;
 }
 /*navbar*/
 nav {
@@ -62,4 +67,8 @@ a:hover {
   --red: #e9081e;
   --white: #ffffff;
   --cef-teal: #2fb2a0;
+}
+.row{
+  font-size: 40px;
+  padding: 5px;
 }
