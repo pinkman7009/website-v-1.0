@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(36, 35, 35);
+  font-family: "Lato", sans-serif;
+  background-image: url(../website-v-1.0/public/assets/images/logo_Recovered2.png);
+ 
+  background-attachment: fixed;
+ 
+  background-size: cover;
+}
+/*navbar*/
+nav {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  min-height: 8vh;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+/*nav links positioning*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 40%;
+}
+/*nav links styles*/
+.nav-links a {
+  color: white;
+  margin-left: 5px;
+  text-decoration: none;
+  font-size: 15px;
+}
+/*logo dims*/
+.logo img {
+  width: 9rem;
+  height: 3.75rem;
+}
+/*links hover*/
+a:hover {
+  color: var(--cef-teal);
+}
+/*landing page section*/
+#LandingPage {
+  color: var(--white);
+  margin: 7.5rem;
+  margin-top: 10rem;
+}
+
+#LandingPage h1 {
+  font-size: 40px;
+  padding: 5px;
+}
+
+#LandingPage p {
+  font-size: 20px;
+  padding: 5px;
+}
+:root {
+  --black: #000000;
+  --grey: #1e1e1e;
+  --red: #e9081e;
+  --white: #ffffff;
+  --cef-teal: #2fb2a0;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
