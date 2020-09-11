@@ -1,10 +1,40 @@
-body {
+/* CSS Variables */
+
+:root {
+  --black: #000000;
+  --grey: #1e1e1e;
+  --red: #e9081e;
+  --white: #ffffff;
+  --cef-teal: #2fb2a0;
+  --background-color : rgb(36,35,35);
+}
+
+/* Reset */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(36, 35, 35);
+}
+body {
+  background: var(--background-color);
   font-family: "Lato", sans-serif;
 }
+
+/* Utility Classes */
+/* These are classes that we are going to use frequently in our CSS */
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.lead-heading {
+  font-size: 4rem;
+}
+.primary-text {
+  font-size: 1.8rem;
+}
+
 /*navbar*/
 nav {
   font-family: "Montserrat", sans-serif;
@@ -13,7 +43,7 @@ nav {
   align-items: center;
   background-color: black;
   color: white;
-  min-height: 8vh;
+  height: 7rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -28,46 +58,50 @@ nav {
 .nav-links a {
   color: white;
   margin-left: 5px;
+  margin-left: 5px;
   text-decoration: none;
-  font-size: 15px;
-}
-/*logo dims*/
-.logo img {
-  width: 9rem;
-  height: 3.75rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
 }
 /*links hover*/
-a:hover {
+.nav-links a:hover {
   color: var(--cef-teal);
 }
+/*logo*/
+.logo img {
+  width: 200px;
+  height: 80px;
+  margin: 0.5rem 0;
+}
+
 /*landing page section*/
-#LandingPage {
+#landingpage {
   color: var(--white);
-  margin: 7.5rem;
-  margin-top: 10rem;
+  min-height: 100vh;
+  margin: 5rem 0;
+  position: relative;
 }
+#landingpage h1 { 
+  margin: 5rem 0;
+} 
 
-#LandingPage h1 {
-  font-size: 40px;
-  padding: 5px;
+#landingpage .landingpage-content{
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 1.5;
+  
 }
-
-#LandingPage p {
-  font-size: 20px;
-  padding: 5px;
-}
-.row {
-  margin: 8rem 0;
-}
-.row img {
-  height: 32vh;
-  width: 50%;
-  margin: 0 4rem;
-}
-:root {
-  --black: #000000;
-  --grey: #1e1e1e;
-  --red: #e9081e;
-  --white: #ffffff;
-  --cef-teal: #2fb2a0;
+.logo-C-image{
+  margin-top: 1rem;
+  transform: rotate(33deg);
+  position: absolute;
+  top: -25px;
+  left: -22px;
+  height: 1170px;
+  width: 1350px;
+  background: url('/public/assets/images/logoC.png') no-repeat center center/cover;
+  z-index: -1;
 }
