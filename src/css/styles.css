@@ -19,6 +19,7 @@
 html {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 body {
   background: var(--background-color);
@@ -29,8 +30,8 @@ body {
 /* These are classes that we are going to use frequently in our CSS */
 
 .container {
-  max-width: 1500px;
-  margin: 0 auto;
+  margin: auto;
+  max-width: 1200px;
 }
 .lead-heading {
   font-size: 4rem;
@@ -47,22 +48,23 @@ nav {
   align-items: center;
   background-color: black;
   color: white;
-  height: 7rem;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  height: 12vh;
+  /* width: 100vw; */
+  /* padding-right: 1.5rem;
+  padding-left: 1.5rem; */
 }
 /*nav links positioning*/
 .nav-links {
   display: flex;
   list-style: none;
   justify-content: space-around;
+  align-items: center;
   width: 40%;
 }
 /*nav links styles*/
 .nav-links a {
   color: white;
-  margin-left: 5px;
-  margin-left: 5px;
+  margin-left: 1rem;
   text-decoration: none;
   font-size: 1.25rem;
   transition: color 0.3s ease;
@@ -86,30 +88,31 @@ nav {
   min-width: 100vw;
   margin-top: 5rem;
   position: relative;
+  padding: 0 5rem;
 }
 #landingpage h1 {
   margin: 5rem 0;
 }
 
 #landingpage .landingpage-content {
-  height: 50vh;
-  width: 50vw;
+  height: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   line-height: 1.5;
 }
 .logo-C-image {
+  background: url('/public/assets/images/logoC.png') no-repeat center center/contain;
   transform: rotate(33deg);
   position: absolute;
-  top: -25px;
-  left: -22px;
-  height: 1170px;
-  width: 1350px; 
-  background: url("/public/assets/images/logoC.png") no-repeat center
-    center/cover;
+  top: 0px;
+  left: -430px;
+  height: 100vh;
+  width: 100vw; 
   z-index: -1;
 }
+
 
 /* About us Carousel */
 
