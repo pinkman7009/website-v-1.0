@@ -35,6 +35,7 @@ body {
 }
 .lead-heading {
   font-size: 4rem;
+  font-family: 'Epilogue', sans-serif;
 }
 .primary-text {
   font-size: 1.8rem;
@@ -213,3 +214,21 @@ from {opacity: .4}
 to {opacity: 1}
 }
 
+/* Projects */
+#projects {
+  margin: 5rem 0;
+  color: #fff;
+  text-align: center;
+}
+#projects .project-main {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2rem;
+  margin: 2rem 1rem;
+
+}
+.project-main .project {
+  background :  rgba(31, 31, 32,0.9);
+  min-height: 50vh;
+  
+}
