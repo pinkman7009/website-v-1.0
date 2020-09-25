@@ -59,6 +59,10 @@ html,body {
   .slideshow-container {
     height: 40vh;  
     }
+   #projects .project-main {
+     grid-template-columns: 1fr;
+     grid
+   }
  
 }
 /* For medium sized phones like Moto G4 */
