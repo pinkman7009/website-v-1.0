@@ -284,8 +284,8 @@ to {opacity: 1}
   }
     
 
-.image:hover,
-.description:hover
+  #our-team .members .image:hover,
+  #our-team .members .description:hover
  {
   transform: rotateY(180deg);
   transition: all 1s ease-out;
