@@ -232,3 +232,84 @@ to {opacity: 1}
   min-height: 50vh;
   
 }
+
+#our-team{
+  margin: 5rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+#our-team .member{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2rem;
+  margin: 2rem 1rem;
+}
+
+#our-team .member .picture {
+  background :  rgba(31, 31, 32,0.9);
+  min-height: 50vh;
+}
+#our-team .member .description {
+  background :  rgba(31, 31, 32,0.9);
+  min-height: 50vh;
+  align-self: center;
+  text-align: center;
+}
+
+#our-team .member .description p{
+font-family: "Lato", sans-serif;
+}
+
+
+.image,
+.description {
+  margin: 10px 100px;
+  background :  rgba(31, 31, 32,0.9);
+  grid-area: box1;
+  align-self: center;
+  text-align: center;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.description {
+  background :  rgba(31, 31, 32,0.9);
+  grid-area: box2;
+}
+
+
+.members {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-template-areas: "box1 box2";
+}
+
+.image .front-side{
+  backface-visibility: hidden;
+
+}
+.description .front-side {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%,-50%);
+  text-align: justify;
+}
+.image:hover,
+.description:hover
+ {
+  transform: rotateY(180deg);
+  transition: all 1s ease-out;
+}
+
+.back-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
