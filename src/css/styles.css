@@ -239,47 +239,8 @@ to {opacity: 1}
   text-align: center;
 }
 
-#our-team .member{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 2rem;
-  margin: 2rem 1rem;
-}
 
-#our-team .member .picture {
-  background :  rgba(31, 31, 32,0.9);
-  min-height: 50vh;
-}
-#our-team .member .description {
-  background :  rgba(31, 31, 32,0.9);
-  min-height: 50vh;
-  align-self: center;
-  text-align: center;
-}
-
-#our-team .member .description p{
-font-family: "Lato", sans-serif;
-}
-
-
-.image,
-.description {
-  margin: 10px 100px;
-  background :  rgba(31, 31, 32,0.9);
-  grid-area: box1;
-  align-self: center;
-  text-align: center;
-  height: 80%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
-}
-.description {
-  background :  rgba(31, 31, 32,0.9);
-  grid-area: box2;
-}
-
-
-.members {
+#our-team .members {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -287,11 +248,29 @@ font-family: "Lato", sans-serif;
   grid-template-areas: "box1 box2";
 }
 
-.image .front-side{
+#our-team .members .image,
+#our-team .members .description {
+  margin: 10px 100px;
+  background :  rgba(31, 31, 32,0.9);
+  align-self: center;
+  text-align: center;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+#our-team .members .image {
+  grid-area: box1;
+}
+#our-team .members .image .front-side{
   backface-visibility: hidden;
 
 }
-.description .front-side {
+#our-team .members .description {
+  grid-area: box2;
+}
+
+#our-team .members .description .front-side {
   backface-visibility: hidden;
   position: absolute;
   top: 50%;
@@ -299,6 +278,12 @@ font-family: "Lato", sans-serif;
   transform: translate(-30%,-50%);
   text-align: justify;
 }
+
+#our-team .members .description .front-side p{
+  font-family: "Lato", sans-serif;
+  }
+    
+
 .image:hover,
 .description:hover
  {
