@@ -232,3 +232,70 @@ to {opacity: 1}
   min-height: 50vh;
   
 }
+
+/* Our Team */
+#our-team{
+  margin: 5rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+#our-team .members {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  /* grid-template-areas: "box1 box2"; */
+}
+
+#our-team .members .image,
+#our-team .members .description {
+  margin: 10px 100px;
+  background :  rgba(31, 31, 32,0.9);
+  align-self: center;
+  text-align: center;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+/* #our-team .members .image {
+  grid-area: box1;
+} */
+#our-team .members .image .front-side{
+  backface-visibility: hidden;
+
+}
+/* #our-team .members .description {
+  grid-area: box2;
+} */
+
+#our-team .members .description .front-side {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%,-50%);
+  text-align: justify;
+}
+
+#our-team .members .description .front-side p{
+  font-family: "Lato", sans-serif;
+  }
+    
+
+  #our-team .members .image:hover,
+  #our-team .members .description:hover
+ {
+  transform: rotateY(180deg);
+  transition: all 1s ease-out;
+}
+
+.back-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
