@@ -25,6 +25,9 @@ body {
   background: var(--background-color);
   font-family: 'Lato', sans-serif;
 }
+section {
+  padding-top: 130px;
+}
 
 /* Utility Classes */
 /* These are classes that we are going to use frequently in our CSS */
@@ -43,6 +46,9 @@ body {
 
 /*navbar*/
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -50,6 +56,7 @@ nav {
   background-color: black;
   color: white;
   height: 12vh;
+  transition: height 0.2s ease;
   /* width: 100vw; */
   /* padding-right: 1.5rem;
   padding-left: 1.5rem; */
@@ -116,7 +123,9 @@ nav {
 }
 
 /* About us Carousel */
-
+#about-us {
+  min-height: 100vh;
+}
 /* Slideshow container */
 .slideshow-container {
   height: 80vh;
@@ -226,7 +235,8 @@ nav {
 
 /* Projects */
 #projects {
-  margin: 5rem 0;
+  min-height: 100vh;
+  /* margin: 5rem 0; */
   color: #fff;
   text-align: center;
 }
@@ -243,7 +253,7 @@ nav {
 
 /* Our Team */
 #our-team {
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
   color: #fff;
   text-align: center;
 }
