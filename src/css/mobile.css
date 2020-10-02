@@ -61,7 +61,6 @@ html,body {
     }
    #projects .project-main {
      grid-template-columns: 1fr;
-     grid
    }
  
 }
@@ -130,6 +129,9 @@ html,body {
   .slideshow-container {
     height: 50vh;  
     }
+    #projects .project-main {
+      grid-template-columns: repeat((2,1fr));
+    }
 
 
 }
@@ -158,6 +160,9 @@ html,body {
   .slideshow-container {
     height: 50vh;  
     }
+    #projects .project-main {
+      grid-template-columns: 1fr ;
+      grid-gap: 3rem !important;
+    }
 
-  
 }
