@@ -23,7 +23,7 @@ html {
 }
 body {
   background: var(--background-color);
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 section {
   padding-top: 130px;
@@ -38,7 +38,7 @@ section {
 }
 .lead-heading {
   font-size: 4rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
 }
 .primary-text {
   font-size: 1.8rem;
@@ -49,7 +49,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +111,7 @@ nav {
   line-height: 1.5;
 }
 .logo-C-image {
-  background: url('/public/assets/images/logoC.png') no-repeat center
+  background: url("/public/assets/images/logoC.png") no-repeat center
     center/contain;
   transform: rotate(33deg);
   position: absolute;
@@ -262,32 +262,29 @@ nav {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-template-areas: "box1 box2"; */
 }
 
-#our-team .members .image,
-#our-team .members .description {
-  margin: 10px 100px;
+#our-team .members .tile {
+  margin: 10px 10%;
   background: rgba(31, 31, 32, 0.9);
   align-self: center;
   text-align: center;
-  height: 80%;
+  height: 260px;
+  position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
-
-/* #our-team .members .image {
-  grid-area: box1;
-} */
-#our-team .members .image .front-side {
-  backface-visibility: hidden;
+#our-team .members .tile:nth-child(1) {
+  grid-column: 1 / span 2;
+  margin: 10px 30%;
 }
-/* #our-team .members .description {
+/* #our-team .members .tile {
   grid-area: box2;
 } */
 
-#our-team .members .description .front-side {
+#our-team .members .tile .front-side {
   backface-visibility: hidden;
   position: absolute;
   top: 50%;
@@ -296,20 +293,63 @@ nav {
   text-align: justify;
 }
 
-#our-team .members .description .front-side p {
-  font-family: 'Lato', sans-serif;
+#our-team .members .tile .front-side p {
+  font-family: "Lato", sans-serif;
 }
 
-#our-team .members .image:hover,
-#our-team .members .description:hover {
+#our-team .members .tile:hover {
   transform: rotateY(180deg);
   transition: all 1s ease-out;
 }
 
-.back-side {
-  position: absolute;
+#our-team .members .tile .back-side {
   top: 0;
-  right: 0;
+  left: 0;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+}
+
+#our-team .members .tile .back-side {
+  padding: 1rem;
+  display: block;
+  height: 100%;
+}
+#our-team .members .tile .back-side .top {
+  display: flex;
+}
+#our-team .members .tile .back-side .body {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  display: block;
+
+  transform: translate(-25%, -50%);
+  text-align: justify;
+}
+#our-team .members .tile .back-side h1 {
+  text-align: left;
+}
+#our-team .members .tile .back-side ul {
+  list-style: none;
+  top: 0;
+  text-align: end;
+  margin-left: auto;
+}
+
+#our-team .members .tile .back-side ul li {
+  color: white;
+  opacity: 0.8;
+}
+
+#our-team .members .tile .back-side ul li a {
+  text-decoration: none;
+  color: white;
+}
+#our-team .members .tile .back-side ul li a span {
+  font-size: 14px;
+  font-weight: 400;
+}
+#our-team .members .tile .back-side ul li a:hover {
+  color: var(--cef-teal);
+  border-bottom: 1px dashed var(--cef-teal);
 }
