@@ -262,7 +262,7 @@ nav {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   /* grid-template-areas: "box1 box2"; */
 }
 
@@ -271,12 +271,15 @@ nav {
   background: rgba(31, 31, 32, 0.9);
   align-self: center;
   text-align: center;
-  height: 80%;
+  height: 260px;
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
-
+#our-team .members .tile:nth-child(1) {
+  grid-column: 1 / span 2;
+  margin: 10px 30%;
+}
 /* #our-team .members .tile {
   grid-area: box2;
 } */
