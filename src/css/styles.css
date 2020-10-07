@@ -109,14 +109,14 @@ nav {
   line-height: 1.5;
 }
 #landingpage .landingpage-image {
-  background: url('/public/assets/images/walle-removebg-preview.png') no-repeat
-    center center/cover;
+  background: url('../public/assets/images/walle-removebg-preview.png')
+    no-repeat center center/cover;
   width: 50%;
   height: 600px;
   margin-left: 100px;
 }
 .logo-C-image {
-  background: url('/public/assets/images/logoC.png') no-repeat center
+  background: url('../public/assets/images/logoC.png') no-repeat center
     center/contain;
   transform: rotate(33deg);
   position: absolute;
