@@ -292,9 +292,9 @@ nav {
 #our-team .members .tile .front-side {
   backface-visibility: hidden;
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-30%, -50%);
+  top: 75%;
+  left: 20%;
+  transform: translate(-20%, -75%);
   text-align: justify;
 }
 
