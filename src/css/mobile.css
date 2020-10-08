@@ -9,8 +9,8 @@ html,body {
 {
   nav {
       flex-direction: column;
-      height: 20vh;
-      padding: 0;
+      height: 20vh !important;
+      /* padding: 1rem 0; */
       justify-content: space-evenly;
   }
   .nav-links {
@@ -38,6 +38,9 @@ html,body {
     height:100%;
     width: 100%;
   }
+  #landingpage .landingpage-image {
+    display: none;
+  }
   .lead-heading {
     font-size: 2rem;
     width: 100%;
@@ -46,9 +49,11 @@ html,body {
   .primary-text {
     font-size: 1rem;
     width: 100%;
-   
   }
-
+  .logo img {
+    height:80px;
+    margin-top: 2rem;
+  }
   .logo-C-image {
     top: 100px;
     left: 0px;
@@ -60,7 +65,7 @@ html,body {
     height: 40vh;  
     }
    #projects .project-main {
-     grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
    }
  
 }
@@ -83,16 +88,13 @@ html,body {
     }
     .lead-heading {
         font-size: 1.5rem;
-     
-      
+    
       }
       .primary-text {
         font-size: 0.85rem;
-
-       
       }
 
-}
+}.landingpage-image
 
 /* For tablets and iPads */
 @media (min-width: 768px) and (max-width: 900px)
