@@ -276,7 +276,8 @@ nav {
   background: rgba(31, 31, 32, 0.9);
   align-self: center;
   text-align: center;
-  height: 260px;
+  height: 400px;
+ 
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
@@ -292,9 +293,9 @@ nav {
 #our-team .members .tile .front-side {
   backface-visibility: hidden;
   position: absolute;
-  top: 75%;
-  left: 20%;
-  transform: translate(-20%, -75%);
+  top: 54%;
+  left: -11%;
+  transform: translate(25%, -54%);
   text-align: justify;
 }
 
@@ -357,4 +358,11 @@ nav {
 #our-team .members .tile .back-side ul li a:hover {
   color: var(--cef-teal);
   border-bottom: 1px dashed var(--cef-teal);
+}
+img{
+
+    max-width: 63%;
+    max-height: 100%;
+object-fit: contain;
+
 }
