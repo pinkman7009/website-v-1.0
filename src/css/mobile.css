@@ -117,7 +117,8 @@ body {
     min-height: 50vh;
   }
   #landingpage .landingpage-image {
-    height: 450px;
+    height: 300px;
+    background-size: cover;
   }
 
   .nav-links {
@@ -166,6 +167,10 @@ body {
 @media (min-width: 1000px) {
   #landingpage {
     min-height: 50vh;
+  }
+  #landingpage .landingpage-image {
+    height: 400px;
+    background-size: cover;
   }
   .nav-links {
     width: 60%;

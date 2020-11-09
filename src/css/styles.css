@@ -152,8 +152,8 @@ nav {
   line-height: 1.5;
 }
 #landingpage .landingpage-image {
-  background: url('../public/assets/images/walle-removebg-preview.png')
-    no-repeat center center/cover;
+  background: url('../public/assets/images/robot.png') no-repeat center
+    center/contain;
   width: 50%;
   height: 600px;
   margin-left: 100px;
@@ -358,4 +358,12 @@ nav {
   width: 200px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.lead img:hover,
+.member img:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
