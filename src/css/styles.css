@@ -133,11 +133,11 @@ nav {
   color: var(--white);
   min-height: 100vh;
   min-width: 100vw;
-  margin-top: 5rem;
   position: relative;
   padding: 0 5rem;
   display: flex;
   padding-top: 150px !important;
+  margin-top: 5rem;
 }
 #landingpage h1 {
   margin: 5rem 0;
@@ -157,6 +157,10 @@ nav {
   width: 50%;
   height: 600px;
   margin-left: 100px;
+}
+.landingpage-tagline {
+  width: 70%;
+  line-height: 2;
 }
 .logo-C-image {
   background: url('../public/assets/images/logoC.png') no-repeat center
@@ -230,12 +234,26 @@ nav {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  line-height: 2;
+  font-size: 2rem;
   text-align: center;
+}
+.about-us-heading {
+  color: #f2f2f2;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  line-height: 2;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* The dots/bullets/indicators */
@@ -283,8 +301,9 @@ nav {
 
 /* Projects */
 #projects {
-  min-height: 70vh;
+  min-height: 90vh;
   /* margin: 5rem 0; */
+  padding-top: 150px;
   color: #fff;
   text-align: center;
 }
@@ -365,5 +384,6 @@ nav {
 
 .lead img:hover,
 .member img:hover {
-  background: rgba(0, 0, 0, 0.5);
+  background-color: black;
+  z-index: 2;
 }
