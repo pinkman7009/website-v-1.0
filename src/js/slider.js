@@ -4,7 +4,7 @@ showSlides(slideIndex);
 
 window.addEventListener("load",function() {
   showSlides(slideIndex);
-  myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  myTimer = setInterval(function(){plusSlides(1)}, 7000);
 })
 // Next/previous controls
 function plusSlides(n){
@@ -15,16 +15,16 @@ function plusSlides(n){
    showSlides(slideIndex += 1); 
   }
   if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 7000);
   } else {
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 7000);
   }
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
   clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 7000);
   showSlides(slideIndex = n);
 }
 

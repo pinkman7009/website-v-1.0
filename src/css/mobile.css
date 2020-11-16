@@ -30,6 +30,7 @@ body {
     align-items: center;
     min-height: 50vh;
     padding: 0 2rem;
+    margin-top: 5rem;
   }
   #landingpage h1 {
     margin: 2rem 0;
@@ -38,6 +39,10 @@ body {
   #landingpage .landingpage-content {
     height: 100%;
     width: 100%;
+    text-align: center;
+  }
+  .landingpage-tagline {
+    text-align: center;
   }
   #landingpage .landingpage-image {
     display: none;
@@ -64,10 +69,27 @@ body {
     width: 75vw;
   }
   .slideshow-container {
-    height: 40vh;
+    height: 80vh;
+  }
+  #about-us {
+    min-height: 80vh;
+  }
+  .text {
+    width: 80%;
+    left: 50%;
+    font-size: 1rem;
+  }
+  .about-us-heading {
+    width: 50%;
+    left: 50%;
+    font-size: 1.5rem;
   }
   #projects .project-main {
     grid-template-columns: 1fr;
+  }
+  #projects,
+  #about-us {
+    padding-top: 160px;
   }
   .leads,
   .members {
@@ -117,7 +139,8 @@ body {
     min-height: 50vh;
   }
   #landingpage .landingpage-image {
-    height: 450px;
+    height: 300px;
+    background-size: cover;
   }
 
   .nav-links {
@@ -144,6 +167,17 @@ body {
   .slideshow-container {
     height: 50vh;
   }
+  .text {
+    width: 80%;
+    left: 50%;
+    font-size: 1.5rem;
+    top: 60%;
+  }
+  .about-us-heading {
+    width: 50%;
+    left: 50%;
+    font-size: 2rem;
+  }
   #projects .project-main {
     grid-template-columns: repeat((2, 1fr));
   }
@@ -167,6 +201,13 @@ body {
   #landingpage {
     min-height: 50vh;
   }
+  #landingpage .landingpage-image {
+    height: 400px;
+    background-size: cover;
+  }
+  .landingpage-tagline {
+    width: 100%;
+  }
   .nav-links {
     width: 60%;
     margin: 0 1rem;
@@ -183,6 +224,15 @@ body {
   }
   .slideshow-container {
     height: 50vh;
+  }
+  .text {
+    width: 80%;
+    left: 50%;
+    top: 60%;
+  }
+  .about-us-heading {
+    width: 50%;
+    left: 50%;
   }
   #projects .project-main {
     grid-template-columns: 1fr;
