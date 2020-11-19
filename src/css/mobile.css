@@ -108,11 +108,17 @@ body {
   .member .small-text {
     font-size: 1rem;
   }
+  #copyright {
+    font-size: 0.8rem;
+  }
 }
 /* For medium sized phones like Moto G4 */
 @media (max-height: 700px) {
   nav {
     height: 25vh !important;
+  }
+  #copyright {
+    font-size: 0.8rem;
   }
 }
 /* For small phones like iPhone 5 */
@@ -129,6 +135,9 @@ body {
   }
   .primary-text {
     font-size: 0.85rem;
+  }
+  #copyright {
+    font-size: 0.8rem;
   }
 }
 /* .landingpage-image */
@@ -190,16 +199,26 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
   }
-
   #projects .project-main {
     grid-template-columns: 1fr;
     grid-gap: 3rem !important;
+  }
+  .project {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-content {
+    justify-content: center;
+  }
+  .card-content .primary-text {
+    font-size: 1.5rem !important;
   }
 }
 /* For iPad Pro */
 @media (min-width: 1000px) {
   #landingpage {
     min-height: 50vh;
+    padding-top: 150px !important;
   }
   #landingpage .landingpage-image {
     height: 400px;
@@ -229,6 +248,7 @@ body {
     width: 80%;
     left: 50%;
     top: 60%;
+    font-size: 2rem !important;
   }
   .about-us-heading {
     width: 50%;
@@ -237,6 +257,16 @@ body {
   #projects .project-main {
     grid-template-columns: 1fr;
     grid-gap: 3rem !important;
+  }
+  .project {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .card-content {
+    justify-content: center;
+  }
+  .card-content .primary-text {
+    font-size: 2rem !important;
   }
   .members {
     grid-template-columns: repeat(2, 1fr);
